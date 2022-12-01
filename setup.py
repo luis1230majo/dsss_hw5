@@ -1,23 +1,15 @@
-from setuptools import setup
+from distutils.core import setup
+from setuptools import find_packages
 
 setup(
-    name='dsss_hw5',
+    name='snowflake',
     version='0.1.0',    
     description='Homework 5 Python package',
     url='https://github.com/luis1230majo/dsss_hw5.git',
     author='Luis Cervantes',
     author_email='luis.b.cervantes@fau.de',
     license='Apache License 2.0',
-    packages=['snowflake'],
-    install_requires=['mpi4py>=2.0',
-                      'numpy',                     
-                      ],
+    packages = find_packages(),
+    install_requires=['turtles', 'numpy'],
 
-    classifiers=[
-        'Development Status :: 1 - Planning',
-        'Intended Audience :: Science/Research',
-        'License :: OSI Approved :: Apache License',  
-        'Operating System :: POSIX :: Windows',        
-        'Programming Language :: Python :: 3.8.8',
-    ],
 )
