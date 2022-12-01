@@ -8,7 +8,7 @@ setup(
     author='Luis Cervantes',
     author_email='luis.b.cervantes@fau.de',
     license='Apache License 2.0',
-    packages=['dsss_hw5'],
+    packages=['snowflake'],
     install_requires=['mpi4py>=2.0',
                       'numpy',                     
                       ],
