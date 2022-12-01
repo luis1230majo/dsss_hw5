@@ -14,7 +14,11 @@ def main(speed=0, bg_color="grey"):
   
  
     """TODO: define different colors here"""
-
+    #from random import randint
+    colors = []
+    
+    for i in range(50):
+        colors.append('#%06X' % np.random.randint(0, 0xFFFFFF))
 
     for _ in range(10):
         # define some params
@@ -22,7 +26,8 @@ def main(speed=0, bg_color="grey"):
         pos = [np.random.randint(-300, 300), np.random.randint(-300, 300)]
 
         """TODO: set snowflake color here (one of the colors defined above)"""
-
+        a = np.random.randint(0,49)
+        myTurtle.pencolor(colors[a])
         # Go to the start position of the snowflake
         myTurtle.penup()
         myTurtle.goto(pos[0], pos[1])
